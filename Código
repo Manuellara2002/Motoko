@@ -1,0 +1,19 @@
+actor {
+  type Student = {
+    id : Text;
+    firstName : Text;
+    lastName : Text;
+    age : Nat;
+    activo : Bool;
+  };
+
+  public func createStudent(id : Text, firstName : Text, lastName : Text, age : Nat, activo : Bool) : async Student {
+    return {
+      id = id;
+      firstName = firstName;
+      lastName = lastName;
+      age = age;
+      activo = activo;
+    };
+  };
+};
